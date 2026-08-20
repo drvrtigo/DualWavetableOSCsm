@@ -1,0 +1,40 @@
+{
+  "configurations": [
+    {
+      "name": "Daisy ARM",
+      "compilerPath": "C:/Program Files/DaisyToolchain/bin/arm-none-eabi-g++.exe",
+      "intelliSenseMode": "windows-gcc-arm",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "defines": [
+        "USE_HAL_DRIVER",
+        "STM32H750xx",
+        "USE_DAISYSP_LGPL=1"
+      ],
+      "includePath": [
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/lib/libDaisy/src",
+        "${workspaceFolder}/lib/libDaisy/src/sys",
+        "${workspaceFolder}/lib/libDaisy/Drivers/CMSIS-DSP/Include",
+        "${workspaceFolder}/lib/libDaisy/Drivers/CMSIS_5/CMSIS/Core/Include",
+        "${workspaceFolder}/lib/libDaisy/Drivers/CMSIS-Device/ST/STM32H7xx/Include",
+        "${workspaceFolder}/lib/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc",
+        "${workspaceFolder}/lib/libDaisy/Middlewares/ST/STM32_USB_Host_Library/Core/Inc",
+        "${workspaceFolder}/lib/libDaisy/src/usbh",
+        "${workspaceFolder}/lib/libDaisy/Middlewares/Third_Party/FatFs/src",
+        "${workspaceFolder}/lib/DaisySP/Source/**",
+        "${workspaceFolder}/lib/DaisySP/DaisySP-LGPL/Source/**"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/src",
+          "${workspaceFolder}/lib/libDaisy/src",
+          "${workspaceFolder}/lib/DaisySP/Source/**",
+          "${workspaceFolder}/lib/DaisySP/DaisySP-LGPL/Source/**"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ],
+  "version": 4
+}

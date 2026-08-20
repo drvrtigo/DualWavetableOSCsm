@@ -1,0 +1,30 @@
+# Project Name
+TARGET = DualWavetableOSCsm
+
+# Enable float formatting for PrintLine("%.5f")
+LDFLAGS += -u _printf_float
+
+# If you use DaisySP modules that rely on the LGPL repo parts
+# USE_DAISYSP_LGPL = 1
+
+# Sources
+CPP_SOURCES = \
+main.cpp \
+src/calibration/calibration_data.cpp \
+src/calibration/calibration_processor.cpp \
+src/calibration/calibration_store.cpp \
+src/calibration/calibration_runtime.cpp
+
+# Optimization
+OPT = -Os
+
+# Boot mode
+APP_TYPE = BOOT_NONE
+
+# Library Locations
+LIBDAISY_DIR = ./lib/libDaisy
+DAISYSP_DIR  = ./lib/DaisySP
+
+# Core location, and generic makefile
+SYSTEM_FILES_DIR = $(LIBDAISY_DIR)/core
+include $(SYSTEM_FILES_DIR)/Makefile
