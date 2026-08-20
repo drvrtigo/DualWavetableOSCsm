@@ -2,6 +2,8 @@
 
 A dual-channel wavetable oscillator firmware for the **Electrosmith Daisy Patch SM**, designed as a Eurorack module. Each channel outputs an independent wavetable voice with per-channel morph control, sub-oscillator, optional harmonic interval layering, analog oscillator drift, and a calibrated 1V/oct pitch tracking system.
 
+*This is a work in progress; no guarantees this readme is fully accurate*
+
 ---
 
 ## Features
