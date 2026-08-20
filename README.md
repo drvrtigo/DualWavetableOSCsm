@@ -116,12 +116,6 @@ make
 make program
 ```
 
-### Flash via QSPI (bootloader DFU)
-
-```bash
-make program-dfu
-```
-
 ---
 
 ## Calibration
